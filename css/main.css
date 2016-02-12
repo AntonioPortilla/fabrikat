@@ -1,71 +1,182 @@
 /*
 
-    Template Author : pixelhint.com
-    Author Email    : contact@pixelhint.com
-    Template Name   : Magnetic
-    
-    
+    Template Author : juliolaveriano.com
+    Author Email    : julioantonio.lp@pixelhint.gmail.com
+    Template Name   : Fabrikat
+
+
     *****************************************
-    
-    
+
+
     - Fonts
     - General CSS
     - Header
-    - Home/portfolio 
-    - Inner page 
-    - Map/Contact page  
-    - Tooltip 
+    - Home
+    - Home/nosotros
+    - Home/servicios
+    - Home/productos
+    - Home/distribuidores
+    - Home/contacto
+    - Map/Contact page
+    - Tooltip
     - Responsive code
-  
-    
+
+
 */
 
 
 
-/*  Fonts  */
 @font-face {
-    font-family: 'raleway-regular';
-    src: url('../fonts/raleway-regular.eot');
-    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-regular.woff') format('woff'),
-         url('../fonts/raleway-regular.ttf') format('truetype'),
-         url('../fonts/raleway-regular.svg#ralewayregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'gothic';
+  src: url('../fonts/gothic.eot');
+  src: local('gothic'),
+  url('../fonts/gothic.woff') format('woff'),
+  url('../fonts/gothic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AGENCYB';
+  src: url('../fonts/AGENCYB.eot');
+  src: local('AGENCYB'),
+  url('../fonts/AGENCYB.woff') format('woff'),
+  url('../fonts/AGENCYB.ttf') format('truetype');
+}
+.gothic {
+  font-family: 'gothic' !important;
+}
+html, body{
+	height: 100%;
+}
+body{
+	margin: initial;
+}
+header nav ul li a{
+    font: 18px 'AGENCYB' !important;
+}
+nav ul{
+	padding-left: 0;
+}
+ul.social{
+	padding-left: 0;
+}
+.bg-home{
+	background: url('../images/bg-home.jpg');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.bg-nos{
+	background: url('../images/nosotros.jpg') !important;
+	background-size: cover !important;
+}
+.bg-srv{
+	background: url('../images/servicios.jpg') !important;
+	background-size: cover !important;
+}
+.bg-contact{
+	background: url('../images/contact.jpg') !important;
+	background-size: cover !important;
+}
+.bg-home .info{
+	padding: 25px 65px;
+}
+h1.title{
+	color: #FF7418;
+	text-shadow:3px 2px 2px #7B6B6B;
+    font-family: 'AGENCYB';
+}
+h2.title{
+    text-shadow:3px 2px 2px #7B6B6B;
+    font-family: 'AGENCYB';
+}
+p.medio{
+	color: white;
+	width: 50%;
+	font-family: 'AGENCYB';
+	font-size: 1.2em;
+	text-align: justify;
+	font-weight: normal;
+}
+a.more{
+	text-decoration: none;
+	background: #F7931E;
+	color: white;
+	padding: 5px 10px;
+	font-family: 'AGENCYB';
+	font-size: 1.2em;
+}
+.opt{
+	float: right;
+}
+.circulo{
+	background: url('../images/opciones.png') no-repeat;
+	width: 110px;
+	height: 110px;
+	margin-bottom: 15px;
+}
+.circulo img{
+	display: block;
+	margin: auto;
+	padding-top: 15px;
+}
+.opciones a{
+	text-decoration: none;
+}
+.circulo div{
+	text-align:center;
+	color: white;
+	margin-top: 5px;
+	font: 16px 'AGENCYB';
+}
+.box-nosotros{
+	padding: 25px 35px;
+	width: 50%;
+	background: rgba(247,147,30, .8);
+}
+.box-nosotros h1, .box-nosotros h2{
+	color: white;
+}
+.box-nosotros p{
+	color: #000;
+	line-height: initial;
+	text-align: justify;
+}
+.bg-srv .panel-default{
+	background: none;
+	border: 0;
+}
+.bg-srv .panel-heading{
+	border: 1px solid #0071BC;
+	background: none;
+	color:white;
+}
+.bg-srv .panel-body{
+	border: 0 !important;
+	line-height: initial;
+}
+#contact input, #contact select, #contact textarea{
+	text-align: center;
+	outline: 1px solid #ED1C24;
+}
+#contact .form-group{
+	margin-left: initial;
+	margin-right: initial;
+}
+#contact button{
+	background: #333333;
+	color: #FF7418;
+	border: 0;
+	font-size: 16px;
 }
 
 
-@font-face {
-    font-family: 'raleway-bold';
-    src: url('../fonts/raleway-bold.eot');
-    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-bold.woff') format('woff'),
-         url('../fonts/raleway-bold.ttf') format('truetype'),
-         url('../fonts/raleway-bold.svg#ralewaybold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'raleway-semibold';
-    src: url('../fonts/raleway-semibold.eot');
-    src: url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-semibold.woff') format('woff'),
-         url('../fonts/raleway-semibold.ttf') format('truetype'),
-         url('../fonts/raleway-semibold.svg#ralewaysemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
+/*+++++++++++++++++++++++++++++++++++++++++++*/
 /*  General CSS*/
 body{
-    background: #fff;
+	background: #000000;
+	font-family: 'gothic';
 }
 
 .wrapper{
@@ -84,7 +195,7 @@ header nav ul li a{
 
 h1, h2, h3, h4, h5 ,h6{
     color: #4b4848;
-    font-family: "raleway-regular", arial;
+    font-family: "gothic", arial;
     letter-spacing: 1px;
 }
 
@@ -96,17 +207,17 @@ h6              { font-size: .75em; margin: 1.67em 0 }
 h1, h2, h3, h4,
 h5, h6          { font-weight: bolder }
 
-.clearfix:before,  
-.clearfix:after {  
-    content: " ";  
-    display: table;  
-}  
-.clearfix:after {  
-    clear: both;  
-}  
- 
-.clearfix {  
-    *zoom: 1;  
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
 }
 
 
@@ -117,20 +228,24 @@ h5, h6          { font-weight: bolder }
 
 /*  Header  */
 @media (min-width:1099px){
+	.bg-srv{
+		min-height: 650px;
+	}
     header{
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 250px;
-        min-height: 100%;
-        padding: 0 0 0 50px;
-        background: url('../img/sidebar.png') #fff;
-        background-position: 0 178px;
-        background-repeat: no-repeat;
-        float: left;
-        overflow: hidden;
-        z-index: 9999;
+		background: url('../images/sidebar.png') #fff;
+		background-position: 0 178px;
+		background-repeat: no-repeat;
+		border-right: 5px solid #FF7418;
+		display: block;
+		float: left;
+		left: 0;
+		min-height: 100%;
+		overflow: hidden;
+		padding: 0 0 0 50px;
+		position: fixed;
+		top: 0;
+		width: 250px;/*width: 250px;*/
+		z-index: 9999;
     }
 
     header .logo{
@@ -146,20 +261,21 @@ h5, h6          { font-weight: bolder }
 
     header nav ul li{
         display: block;
-        margin-bottom: 15px;
+        margin-bottom: 6px;
     }
 
     header nav ul li a{
         color: #FFFFFF;
-        font-family: "raleway-regular", arial;
+        font-family: "gothic", arial;
         font-size: 14px;
         text-decoration: none;
         letter-spacing: 1px;
+        text-transform: uppercase;
     }
 
     header nav ul li a:hover,
     header nav ul li a.selected{
-        color: #ccc;
+        color: #FF7418;
     }
 
     header .footer{
@@ -168,15 +284,17 @@ h5, h6          { font-weight: bolder }
     }
 
     header ul.social{
-        list-style: none;
-        margin-bottom: 5px;
+		list-style: none;
+		/*margin-bottom: 5px;*/
+		margin-bottom: 0px;
+		margin-top: 15px;
     }
 
     header ul.social li{
         display: block;
         float: left;
         position: relative;
-        margin: 0 15px 15px 0;
+        margin: 0 5px 15px 0;
     }
 
 
@@ -184,41 +302,46 @@ h5, h6          { font-weight: bolder }
         display: block;
         width: 30px;
         height: 30px;
-        background: url('../img/sm.png') no-repeat;
+        background: url('../images/sm.png') no-repeat;
         background-position: 0 0;
     }
 
 
     header ul.social li a:hover{
-        background: url('../img/sm_hover.png') no-repeat;
+        background: url('../images/sm_hover.png') no-repeat;
     }
 
 
 
     header ul.social li a.fb,
     header ul.social li a.fb:hover{
-        background-position: 0 0;
+        /*background-position: 0 0;*/
+        background: url('../images/fb.png') no-repeat;
     }
 
 
     header ul.social li a.google,
     header ul.social li a.google:hover{
-        background-position: -31px 0;
+        /*background-position: -31px 0;*/
+        background: url('../images/gp.png') no-repeat;
     }
 
-    header ul.social li a.behance,
-    header ul.social li a.behance:hover{
-        background-position: -62px 0;
+    header ul.social li a.youtube,
+    header ul.social li a.youtube:hover{
+        background: url('../images/yt.png') no-repeat;
+        /*background-position: -62px 0;*/
     }
 
     header ul.social li a.twitter,
     header ul.social li a.twitter:hover{
-        background-position: -93px 0;
+        /*background-position: -93px 0;*/
+        background: url('../images/tw.png') no-repeat;
     }
 
-    header ul.social li a.dribble,
-    header ul.social li a.dribble:hover{
-        background-position: -124px 0;
+    header ul.social li a.linkedin,
+    header ul.social li a.linkedin:hover{
+        /*background-position: -124px 0;*/
+         background: url('../images/ln.png') no-repeat;
     }
 
     header ul.social li a.rss,
@@ -228,7 +351,7 @@ h5, h6          { font-weight: bolder }
 
     header .rights p{
         color: #fff;
-        font-family: "raleway-regular", arial;
+        font-family: "gothic", arial;
         font-size: 11px;
         letter-spacing: 1px;
         line-height: 18px;
@@ -253,10 +376,10 @@ h5, h6          { font-weight: bolder }
     width: 40px;
     height: 40px;
     cursor: pointer;
-    background: url('../img/men_icons.png') no-repeat;
+    background: url('../images/men_icons.png') no-repeat;
 }
 
-#menu_icon{    
+#menu_icon{
     background-position: 0 0;
 }
 .close_menu{
@@ -308,7 +431,7 @@ h5, h6          { font-weight: bolder }
     display: block;
     width: 100%;
     height: 100%;
-    top: 0; 
+    top: 0;
     left: 0;
     background: #ffffff;
     opacity: 0;
@@ -336,7 +459,7 @@ h5, h6          { font-weight: bolder }
     padding: 20px 0;
     z-index: 77;
     color: #454545;
-    font-family: "raleway-regular", arial;
+    font-family: "gothic", arial;
     font-size: 16px;
     letter-spacing: .5px;
     border-bottom: 1px solid #bfbbbb;
@@ -356,7 +479,7 @@ h5, h6          { font-weight: bolder }
     overflow: hidden;
     display: block;
     position: relative;
-    background: url('../img/hero_image.jpg') no-repeat;
+    background: url('../images/hero_image.jpg') no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -388,7 +511,7 @@ h5, h6          { font-weight: bolder }
     display: block;
     width: 40px;
     height: 40px;
-    background: url('../img/p_navigation.png') no-repeat;
+    background: url('../images/p_navigation.png') no-repeat;
     background-position: 0 0;
 }
 
@@ -434,7 +557,7 @@ h5, h6          { font-weight: bolder }
 
 .content{
     color: #4b4848;
-    font-family: "raleway-regular", arial;
+    font-family: "gothic", arial;
     font-size: 15px;
     line-height: 22px;
     padding: 60px 30px;
@@ -448,7 +571,7 @@ h5, h6          { font-weight: bolder }
 
 .content p{
     color: #4b4848;
-    font-family: "raleway-regular", arial;
+    font-family: "gothic", arial;
     font-size: 15px;
     line-height: 24px;
     margin-bottom: 60px;
@@ -476,7 +599,7 @@ h5, h6          { font-weight: bolder }
 
 /*  Contact page map  */
 #map .map_adresse{
-    font-family: 'raleway-regular', arial;
+    font-family: 'gothic', arial;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 1px;
@@ -509,7 +632,7 @@ h5, h6          { font-weight: bolder }
     padding: 7px 10px;
     background: #454545;
     color: #fff;
-    font-family: "raleway-regular", arial;
+    font-family: "gothic", arial;
     font-size: 12px;
     position: absolute;
     white-space: nowrap;
@@ -563,7 +686,7 @@ h5, h6          { font-weight: bolder }
         float: right;
         margin: 30px 30px 0 0;
     }
-    
+
     header nav{
         width: 100%;
         position: absolute;
@@ -583,7 +706,7 @@ h5, h6          { font-weight: bolder }
         padding: 30px 0;
         text-align: center;
         color: #454545;
-        font-family: "raleway-regular", arial;
+        font-family: "gothic", arial;
         font-size: 14px;
         text-decoration: none;
         border-top: 1px solid #f7f5f5;
@@ -618,4 +741,20 @@ h5, h6          { font-weight: bolder }
      .main .work{
         width: 100%;
     }
+	body{
+		background: #fff !important;
+	}
+	p.medio{
+		width: 100% !important;
+	}
+	.box-nosotros{
+		width: 100% !important;
+		display: table-cell;
+	}
+	.info{
+		padding: 0 !important;
+	}
+	.phome{
+		padding: 15px !important;
+	}
 }
