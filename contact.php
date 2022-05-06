@@ -15,12 +15,12 @@
 <body>
 	<header style="box-sizing:initial">
 		<div class="logo">
-			<a href="/"><img src="images/logo.png" title="fabrikat" alt="fabrikat"/></a>
+			<a href="index.html"><img src="images/logo.png" title="fabrikat" alt="fabrikat"/></a>
 		</div>
 		<div id="menu_icon"></div>
 		<nav>
 			<ul>
-				<li><a href="/">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="nosotros.html">Nosotros</a></li>
 				<li><a href="servicios.html">Servicios</a></li>
 				<li><a href="#">Productos</a></li>
